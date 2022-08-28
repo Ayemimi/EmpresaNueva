@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <title>productos</title>
+    <style>
+        header{
+          background-color: bisque;
+        }
+      </style>
 </head>
 <body>
 
@@ -20,24 +25,37 @@
        
        </nav> 
        
-        </header>
+    </header>
 <main>
-    <h1>
-        Formulario de Productos
+    <h1 class="mifuente">
+        Productos
     </h1>
+    <article>
+        <p>
+            Si queres saber mas sobre nuestros productos llena el formulario.
+        </p>
+    </article>
     <form action="/guardar" method="">
+        <div class="formulario"
         <label for="nombre">Nombre:</label>
-        <input type="text">
-        <br>
-        <label for="telefono">telefono:</label>
-       <input type="number" name="telefono" id="telefono">
-       <br>
-       <label for="email">email: </label>
-       <input type="email" name="email" id="email">
-       <br>
-       <label for="password">password: </label>
-       <input type="password" name="password" id="password">
-       <br>
+        <input class="dato" type="text">
+        </div>
+
+        <div class="formulario">
+        <label for="telefono">Telefono:</label>
+       <input class="dato" type="number" name="telefono" id="telefono">
+       </div>
+
+       <div class="formulario">
+       <label for="email">Email: </label>
+       <input class="dato" type="email" name="email" id="email">
+       </div>
+
+       <div class="formulario">
+       <label for="password">Password: </label>
+       <input class="dato" type="password" name="password" id="password">
+       </div>
+
        <input type="reset" value="Borrar campos">
 
        <input type="submit" value="Enviar datos">
