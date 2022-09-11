@@ -42,12 +42,31 @@ color: rgb(202, 133, 133);
     color: beige;
 }
 #portada{
+    float: left;
     width: 70%;
     background: rgb(117, 108, 108);
     padding: 10px;
     box-sizing: border-box;
     font-family: Raleway;
 }
+.ads{
+    width: 25%;
+    background: rgb(190, 145, 145);
+    height: 200px;
+    box-sizing: border-box;
+    float: right;
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(212, 191, 201);
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.limpiarfloat{
+    clear: both;
+
+}
+
 .destacado{
     background: rgb(243, 231, 209);
     padding: 5px;
@@ -86,3 +105,30 @@ width: 50%;
 height: 10%;
 }
 
+.footer{
+    clear: both;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(212, 162, 171);
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+/* responsive */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    body{
+        background: black;
+        
+    }
+    .header{
+        background: tomato;
+        color: aliceblue;
+    }
+    img{
+        width: 60%;
+    }
+}
