@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>productos</title>
     <style>
         header{
@@ -12,10 +13,10 @@
         }
       </style>
 </head>
-<body>
+<body class="bg-light">
 
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="navbar">
            <ul>
             <li><a href="../index.html">home</a></li>
                <li>  <a href="./nosotros.html">nosotros</a> </li>
@@ -24,17 +25,67 @@
            </ul>
        
        </nav> 
-       
     </header>
-<main>
     <h1 class="mifuente">
         Productos
     </h1>
+<main>
+    <article>
+        <p class="caja">
+          Los siguientes productos estan seleccionados para proporcionar la mejor experiencia de nuestros clientes. 
+        </p>
+       </article>
+<div class="row">
+    <div class="card m-3" style="width: 18rem;">
+        <img src="../imagenes/20190718035145_.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Azucar mascabo</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+    <div class="card m-3" style="width: 18rem;">
+        <img src="../imagenes/dulcedeleche.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dulce de Leche</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+    <div class="card m-3" style="width: 18rem;">
+        <img src="../imagenes/chocolatenegro.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Negro</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <img src="../imagenes/extracto-de-vainilla-cajita.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Estracto de Vainilla</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <img src="../imagenes/ingrediente-aceite-de-coco.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aceite de coco</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+</div>
+
+
+    
     <article>
         <p>
             Si queres saber mas sobre nuestros productos llena el formulario.
         </p>
     </article>
+
     <form action="/guardar" method="">
         <div class="formulario"
         <label for="nombre">Nombre:</label>
@@ -62,6 +113,22 @@
 
     </form>
 </main>
+<footer >
+    <div class="bg-light text-light" >
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Azucar, Flores y muchos colores, Inc</p>
     
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="../index.html" class="./index.html nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="./nosotros.html" class="./pages/nosotros.html nav-link px-2 text-muted">Nosotros</a></li>
+          <li class="nav-item"><a href="./sucursales.html" class="nav-link px-2 text-muted">Sucursales</a></li>
+        </ul>
+      </footer>
+    </div>
+  </footer>
 </body>
 </html>
